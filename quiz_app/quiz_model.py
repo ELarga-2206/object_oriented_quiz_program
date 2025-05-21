@@ -53,7 +53,7 @@ class QuizModel:
         if not current:
             return False, None
             
-        is_correct = (chr(65 + selected_option) == current["answer"]  # score logic
+        is_correct = (chr(65 + selected_option)) == current["answer"]  # score logic
         if is_correct:
             self.score += 1
             
