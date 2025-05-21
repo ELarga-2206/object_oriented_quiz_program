@@ -1,10 +1,12 @@
 #quiz_app
+
 #main.py             # Entry point
 #quiz_controller.py  # Main application logic
 #quiz_model.py       # Data handling and questions
 #quiz_view.py        # GUI components and styling
 #constants.py        # Configuration constants
 
+# for variables
 BACKGROUND_COLOR = "#fdf6f0"
 QUESTION_FONT = ("Segoe UI", 16)
 OPTION_FONT = ("Segoe UI", 12)
