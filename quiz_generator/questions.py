@@ -1,8 +1,17 @@
-# quiz_maker files
-
-# main.py             # for the main prog
-# question.py         # how the prog will handle questions
-# quiz_manager.py     # file operation
-# user_interface.py   # display questions, input and output
-
-#blueprint for oop convertion
+class Question:
+    def __init__(self, text, choices, correct_answer):
+        self.text = text
+        self.choices = choices  
+        self.correct_answer = correct_answer  
+    
+    def to_file_format(self):  # need to convert questions into strings
+        lines = [
+            f"Question: {self.text}",
+            f"A: {self.choices['A']}",
+            f"B: {self.choices['B']}",
+            f"C: {self.choices['C']}",
+            f"D: {self.choices['D']}",
+            f"Correct Answer: {self.correct_answer}",
+            "-" * 40
+        ]
+        return "\n".join(lines) + "\n"
